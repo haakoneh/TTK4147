@@ -1,0 +1,5 @@
+int main(){
+	printf("litteral cancer");
+	return 0;
+
+}
