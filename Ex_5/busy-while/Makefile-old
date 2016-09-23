@@ -1,0 +1,29 @@
+# program executable name
+TARGET = busytestSingleCore
+
+# compiler flags
+CFLAGS = -g -Wall -D_GNU_SOURCE -I$(UTIL)
+# linker flags
+LDFLAGS = -g -pthread -lpthread -lrt -lcomedi -lm
+
+# list of sources
+SOURCES = $(shell find -name "*.c")
+
+# default rule, to compile everything
+all: $(TARGET)
+
+# define object files
+OBJECTS = $(SOURCES:.c=.o)
+
+# link programs
+$(TARGET): $(OBJECTS)
+	gcc $(LDFLAGS) -o $@ $^
+
+# compile
+%.o : %.c ../%.c
+	gcc $(CFLAGS) -c -o $@ $<
+
+# cleaning
+clean:
+	rm -f $(TARGET) $(OBJECTS)
+
