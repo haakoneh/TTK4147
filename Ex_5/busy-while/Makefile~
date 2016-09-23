@@ -1,3 +1,7 @@
-busyTest : busytest-singleCore.c
-	gcc -o -D_GNU_SOURCE busytestSingleCore busytest-singleCore.c ../io.c -lpthread -lrt -lcomedi -lm
+busyTestSingleCore : busytest-singleCore.c
+	gcc -o  busytestSingleCore busytest-singleCore.c ../io.c -D_GNU_SOURCE -lpthread -lrt -lcomedi -lm
 	./busytestSingleCore
+
+busytest : busytest.c
+	gcc -o busytest busytest.c ../io.h -D_GNU_SOURCE -lpthread -lrt -lcomedi -lm
+	./busytest

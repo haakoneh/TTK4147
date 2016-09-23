@@ -40,7 +40,7 @@ static void *thread_c(void *data){
 
 
 
-int main1(){
+int main(){
 	
 	io_init();
 	
