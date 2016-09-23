@@ -7,7 +7,13 @@
 
 
  #include "io.h"
+/*
 
+2.1
+
+
+
+*/
 
 void a_receiver(void *data){
 	//set_cpu(1);
@@ -18,7 +24,7 @@ void a_receiver(void *data){
 			io_write(1,1);
 		}
 	}
-}
+}s
 
 void b_receiver(void *data){
 	//set_cpu(1);
@@ -42,13 +48,20 @@ void c_receiver(void *data){
 	}
 }
 
-int main(){
+int main1(){
+//	mlockall(MCL_CURRENT|MCL_FUTURE);
+	printf("PLS");
+	rt_printf("TEST");
 	RT_TASK task_a;
 	RT_TASK task_b;
 	RT_TASK task_c;
+	while(1);
 	rt_task_create(&task_a,"Response A task", 0, 99, T_JOINABLE );
 	rt_task_start(&task_a,&a_receiver, NULL);
-	 while(1);
+	rt_task_start(&task_b,&b_receiver,NULL);
+	rt_task_start(&task_c,&c_receiver,NULL);
+	
+		
 	
 	return 0;
 

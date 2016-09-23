@@ -1,10 +1,12 @@
-# program executable name
-TARGET = brtt_rtai
+
 
 XENO_DESTDIR:=
 XENO_CONFIG:=$(XENO_DESTDIR)/usr/bin/xeno-config
 XENO_CFLAGS:=$(shell DESTDIR=$(XENO_DESTDIR) $(XENO_CONFIG) --skin native --cflags)
 XENO_LIBS:=$(shell DESTDIR=$(XENO_DESTDIR) $(XENO_CONFIG) --skin native --ldflags)
+
+# program executable name
+TARGET = xeno_test
 
 # compiler flags
 CFLAGS = -g -Wall -D_GNU_SOURCE $(XENO_CFLAGS)

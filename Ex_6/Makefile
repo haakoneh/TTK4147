@@ -6,14 +6,14 @@ XENO_CFLAGS:=$(shell DESTDIR=$(XENO_DESTDIR) $(XENO_CONFIG) --skin native --cfla
 XENO_LIBS:=$(shell DESTDIR=$(XENO_DESTDIR) $(XENO_CONFIG) --skin native --ldflags)
 
 # program executable name
-TARGET = brtt_rtai
+TARGET = xeno_test
 
 # compiler flags
 CFLAGS = -g -Wall -D_GNU_SOURCE $(XENO_CFLAGS)
 #-I/usr/realtime/include 
 
 # linker flags
-LDFLAGS = -g $(XENO_LIBS) -lcomedi -lm
+LDFLAGS = -g $(XENO_LIBS) -pthread -lcomedi -lm
 
 # list of sources
 SOURCES = $(shell find -name "*.c")
