@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QdeProjectsBuildInfo>
+<qdeBuildInfo IMemento.internal.id="C:/Users/haakoneh/Documents/QNX_Ex_08/Ex_08_QNX" buildConfig="_x86_r" projectName="Ex_08_QNX">
+<srcDirs>
+<element>C:/Users/haakoneh/Documents/QNX_Ex_08/Ex_08_QNX/x86/o</element>
+<element>C:/Users/haakoneh/Documents/QNX_Ex_08/Ex_08_QNX/x86</element>
+<element>C:/Users/haakoneh/Documents/QNX_Ex_08/Ex_08_QNX</element>
+</srcDirs>
+<libDirs>
+<element>C:/Users/haakoneh/Documents/QNX_Ex_08/Ex_08_QNX/x86/o</element>
+<element>C:/QNX650/target/qnx6/x86/lib</element>
+<element>C:/QNX650/target/qnx6/x86/usr/lib</element>
+</libDirs>
+<incDirs>
+<element>C:/QNX650/target/qnx6/usr/include</element>
+<element>C:/Users/haakoneh/Documents/QNX_Ex_08/Ex_08_QNX/x86/o</element>
+<element>C:/Users/haakoneh/Documents/QNX_Ex_08/Ex_08_QNX/x86</element>
+<element>C:/Users/haakoneh/Documents/QNX_Ex_08/Ex_08_QNX</element>
+</incDirs>
+<libs/>
+<SRCS>
+<element>C:/Users/haakoneh/Documents/QNX_Ex_08/Ex_08_QNX/Ex_08_QNX.c</element>
+</SRCS>
+</qdeBuildInfo>
+<qdeBuildInfo IMemento.internal.id="C:/Users/haakoneh/Documents/QNX_Ex_08/pid_reader" buildConfig="_x86_r" projectName="pid_reader">
+<srcDirs>
+<element>C:/Users/haakoneh/Documents/QNX_Ex_08/pid_reader/x86/o</element>
+<element>C:/Users/haakoneh/Documents/QNX_Ex_08/pid_reader/x86</element>
+<element>C:/Users/haakoneh/Documents/QNX_Ex_08/pid_reader</element>
+</srcDirs>
+<libDirs>
+<element>C:/Users/haakoneh/Documents/QNX_Ex_08/pid_reader/x86/o</element>
+<element>C:/QNX650/target/qnx6/x86/lib</element>
+<element>C:/QNX650/target/qnx6/x86/usr/lib</element>
+</libDirs>
+<incDirs>
+<element>C:/QNX650/target/qnx6/usr/include</element>
+<element>C:/Users/haakoneh/Documents/QNX_Ex_08/pid_reader/x86/o</element>
+<element>C:/Users/haakoneh/Documents/QNX_Ex_08/pid_reader/x86</element>
+<element>C:/Users/haakoneh/Documents/QNX_Ex_08/pid_reader</element>
+</incDirs>
+<libs/>
+<SRCS>
+<element>C:/Users/haakoneh/Documents/QNX_Ex_08/pid_reader/pid_reader.c</element>
+</SRCS>
+</qdeBuildInfo>
+</QdeProjectsBuildInfo>

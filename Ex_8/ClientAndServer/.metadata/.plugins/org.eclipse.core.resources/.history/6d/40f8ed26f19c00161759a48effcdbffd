@@ -1,0 +1,49 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <errno.h>
+#include <string.h>
+#include <fcntl.h>
+#include <sys/dispatch.h>
+#include <sys/mman.h>
+#include <pthread.h>
+#include <process.h>
+
+typedef struct message{
+	char * msg;
+	int number;
+}message_buffer;
+
+typedef struct pid_data{
+	pthread_mutex_t pid_mutex;
+	pid_t pid;
+}pid_data;
+
+pid_data sharedMemoryRead(){
+	pid_data *other_struct;
+	int file_descriptor = shm_open("/sharedpid",O_RDWR,S_IRWXU);
+	void *s_mem_ptr = mmap(0,sizeof(pid_data),PROT_READ | PROT_WRITE,MAP_SHARED,file_descriptor,0);
+
+	other_struct = (pid_data* )s_mem_ptr;
+	printf("Pid is: %i", other_struct->pid);
+
+	return other_struct;
+
+}
+
+
+
+int main(int argc, char *argv[]) {
+	printf("Client");
+	message_buffer sent_data;
+	message_buffer received_data;
+	pid_data pid_client = sharedMemoryRead();
+	//Connect to a server/channel
+
+	channel_id = ConnectAttach(0,pid_client, 1, 0, 0);
+
+	MsgSend(channel_id, sent_data, sizeof(message_buffer));
+
+
+	return EXIT_SUCCESS;
+}

@@ -1,0 +1,249 @@
+!SESSION 2016-10-28 10:44:40.179 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=no_NO
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2016-10-28 10:44:40.864
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2016-10-28 10:44:54.559
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2016-10-28 10:44:54.559
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1b493c6),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1b493c6)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1b493c6),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1b493c6)),sourcePriority=16640)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-10-28 10:46:00.094
+!MESSAGE Indexed 'Client' (1 sources, 25 headers) in 0,70 sec: 1 256 declarations; 966 references; 3 unresolved inclusions; 0 syntax errors; 0 unresolved names (0,00 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-10-28 10:46:33.315
+!MESSAGE Indexed 'Server' (1 sources, 25 headers) in 0,25 sec: 1 256 declarations; 966 references; 3 unresolved inclusions; 0 syntax errors; 0 unresolved names (0,00 %)
+!SESSION 2016-10-28 12:07:34.364 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=no_NO
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2016-10-28 12:07:35.051
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-10-28 12:07:37.526
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2016-10-28 12:07:39.905
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2016-10-28 12:07:39.905
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@117c0eb),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@117c0eb)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@117c0eb),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@117c0eb)),sourcePriority=16640)
+!SESSION 2016-10-28 12:10:05.500 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=no_NO
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2016-10-28 12:10:06.178
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-10-28 12:10:08.002
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2016-10-28 12:10:10.317
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2016-10-28 12:10:10.317
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@a9a32c),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@a9a32c)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@a9a32c),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@a9a32c)),sourcePriority=16640)
+!SESSION 2016-10-28 12:12:00.028 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=no_NO
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2016-10-28 12:12:00.724
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-10-28 12:12:02.641
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2016-10-28 12:12:05.043
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2016-10-28 12:12:05.043
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@a9a32c),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@a9a32c)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@a9a32c),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@a9a32c)),sourcePriority=16640)
+
+!ENTRY com.qnx.tools.ide.SystemProfiler.core 2 2 2016-10-28 13:37:57.449
+!MESSAGE Repairable data format problems
+
+!ENTRY com.qnx.tools.ide.SystemProfiler.core 4 4 2016-10-28 13:41:08.611
+!MESSAGE Error waiting for log to be ready. Is the target accessible?
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.FilterInputStream.read(Unknown Source)
+	at com.qnx.tools.utils.target.TargetBinary.receiveResponse(Unknown Source)
+	at com.qnx.tools.utils.target.TargetServiceTrace.command(Unknown Source)
+	at com.qnx.tools.utils.target.TargetServiceTrace.command(Unknown Source)
+	at com.qnx.tools.utils.target.TargetServiceTrace.getStatus(Unknown Source)
+	at com.qnx.tools.ide.SystemProfiler.neutrino.ui.logger.SystemProfilerLogger.waitForTimeLog(Unknown Source)
+	at com.qnx.tools.ide.SystemProfiler.neutrino.ui.logger.SystemProfilerLogger.traceKernelEvents(Unknown Source)
+	at com.qnx.tools.ide.SystemProfiler.neutrino.ui.logger.SystemProfilerLogger.runKernelTraceLogging(Unknown Source)
+	at com.qnx.tools.ide.SystemProfiler.neutrino.ui.logger.launch.KernelEventTraceLaunchDelegate$1.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-28 13:41:28.173
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.DataInputStream.read(Unknown Source)
+	at com.qnx.tools.utils.target.TargetProcess$InputStreamWrapper.read(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at java.io.FilterInputStream.read(Unknown Source)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:144)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:134)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:207)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.qnx.tools.ide.qde.debug.core 4 0 2016-10-28 13:41:28.374
+!MESSAGE Launch cleaning error
+!SUBENTRY 1 com.qnx.tools.ide.qde.debug.core 4 0 2016-10-28 13:41:28.374
+!MESSAGE Attempt to delete remote file '/tmp/Serverhaakoneh147765466546470' failed:
+!STACK 0
+java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at java.io.DataOutputStream.write(Unknown Source)
+	at java.io.FilterOutputStream.write(Unknown Source)
+	at com.qnx.tools.utils.target.TargetBinary.sendCommand(Unknown Source)
+	at com.qnx.tools.utils.target.TargetServiceFile.command(Unknown Source)
+	at com.qnx.tools.utils.target.TargetServiceFile.command(Unknown Source)
+	at com.qnx.tools.utils.target.TargetServiceFile.rm(Unknown Source)
+	at com.qnx.tools.utils.target.TargetServiceFile.rm(Unknown Source)
+	at com.qnx.tools.ide.qde.debug.internal.core.QDELaunch$1.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-28 13:41:38.010
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.DataInputStream.read(Unknown Source)
+	at com.qnx.tools.utils.target.TargetProcess$InputStreamWrapper.read(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at java.io.FilterInputStream.read(Unknown Source)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:144)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:134)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:207)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-28 13:41:38.014
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.DataInputStream.read(Unknown Source)
+	at com.qnx.tools.utils.target.TargetProcess$InputStreamWrapper.read(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at java.io.FilterInputStream.read(Unknown Source)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:144)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:134)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:207)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.qnx.tools.ide.qde.debug.core 4 0 2016-10-28 13:42:07.779
+!MESSAGE Launch cleaning error
+!SUBENTRY 1 com.qnx.tools.ide.qde.debug.core 4 0 2016-10-28 13:42:07.779
+!MESSAGE Attempt to delete remote file '/tmp/Clienthaakoneh147765466646871' failed:
+!STACK 0
+java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at java.io.DataOutputStream.write(Unknown Source)
+	at java.io.FilterOutputStream.write(Unknown Source)
+	at com.qnx.tools.utils.target.TargetBinary.sendCommand(Unknown Source)
+	at com.qnx.tools.utils.target.TargetServiceFile.command(Unknown Source)
+	at com.qnx.tools.utils.target.TargetServiceFile.command(Unknown Source)
+	at com.qnx.tools.utils.target.TargetServiceFile.rm(Unknown Source)
+	at com.qnx.tools.utils.target.TargetServiceFile.rm(Unknown Source)
+	at com.qnx.tools.ide.qde.debug.internal.core.QDELaunch$1.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.qnx.tools.ide.qde.debug.core 4 0 2016-10-28 13:45:42.858
+!MESSAGE Launch cleaning error
+!SUBENTRY 1 com.qnx.tools.ide.qde.debug.core 4 0 2016-10-28 13:45:42.858
+!MESSAGE Attempt to delete remote file '/tmp/Clienthaakoneh147765485690473' failed:
+!STACK 0
+java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at java.io.DataOutputStream.write(Unknown Source)
+	at java.io.FilterOutputStream.write(Unknown Source)
+	at com.qnx.tools.utils.target.TargetBinary.sendCommand(Unknown Source)
+	at com.qnx.tools.utils.target.TargetServiceFile.command(Unknown Source)
+	at com.qnx.tools.utils.target.TargetServiceFile.command(Unknown Source)
+	at com.qnx.tools.utils.target.TargetServiceFile.rm(Unknown Source)
+	at com.qnx.tools.utils.target.TargetServiceFile.rm(Unknown Source)
+	at com.qnx.tools.ide.qde.debug.internal.core.QDELaunch$1.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.qnx.tools.ide.qde.debug.core 4 0 2016-10-28 13:45:46.049
+!MESSAGE Launch cleaning error
+!SUBENTRY 1 com.qnx.tools.ide.qde.debug.core 4 0 2016-10-28 13:45:46.050
+!MESSAGE Attempt to delete remote file '/tmp/Serverhaakoneh147765485596772' failed:
+!STACK 0
+java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at java.io.DataOutputStream.write(Unknown Source)
+	at java.io.FilterOutputStream.write(Unknown Source)
+	at com.qnx.tools.utils.target.TargetBinary.sendCommand(Unknown Source)
+	at com.qnx.tools.utils.target.TargetServiceFile.command(Unknown Source)
+	at com.qnx.tools.utils.target.TargetServiceFile.command(Unknown Source)
+	at com.qnx.tools.utils.target.TargetServiceFile.rm(Unknown Source)
+	at com.qnx.tools.utils.target.TargetServiceFile.rm(Unknown Source)
+	at com.qnx.tools.ide.qde.debug.internal.core.QDELaunch$1.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.qnx.tools.ide.SystemProfiler.core 2 2 2016-10-28 13:46:08.016
+!MESSAGE Repairable data format problems
+
+!ENTRY com.qnx.tools.ide.SystemProfiler.core 2 2 2016-10-28 13:48:19.162
+!MESSAGE Repairable data format problems
+
+!ENTRY com.qnx.tools.ide.SystemProfiler.core 2 2 2016-10-28 13:49:24.278
+!MESSAGE Repairable data format problems

@@ -1,0 +1,27 @@
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <errno.h>
+#include <string.h>
+#include <fcntl.h>
+#include <sys/dispatch.h>
+#include <sys/mman.h>
+#include <pthread.h>
+#include <process.h>
+
+typedef struct pid_data{
+	pthread_mutex_t pid_mutex;
+	pid_t pid;
+}pid_data;
+
+
+
+int main() {
+	pid_data other_struct;
+
+	int file_descriptor = shm_open("/sharedpid",O_RDWR,S_IRWXU);
+
+
+	return EXIT_SUCCESS;
+}

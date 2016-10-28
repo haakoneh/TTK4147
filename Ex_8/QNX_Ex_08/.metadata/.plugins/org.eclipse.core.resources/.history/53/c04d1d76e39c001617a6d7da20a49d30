@@ -1,0 +1,33 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <errno.h>
+#include <string.h>
+#include <fcntl.h>
+#include <sys/dispatch.h>
+#include <sys/mman.h>
+#include <pthread.h>
+struct pid_data{
+	pthread_mutex_t pid_mutex;
+	pid_t pid;
+}
+
+
+
+
+int main(int argc, char *argv[]) {
+	pthread_mutexattr_t myattr;
+	struct pid_mutex pid_mutex;
+	pthread_mutexattr_init(&myattr);
+	pthread_mutexattr_setpshared(&myattr,PTHREAD_PROCESS_SHARED);
+	pthread_mutex_init(&pid_mutex->pid_mutex,&myattr);
+	&pid_mutex->pid = getPid();
+	printf("Welcome to the QNX Momentics IDE\n");
+
+	int file_descriptor = shm_open("/sharedpid",O_RDWR,S_IRWXU);
+	void *s_mem_ptr = mmap(0,sizeof(struct pid_data),PROT_READ | PROT_WRITE,MAP_SHARED,file_descriptor,0);
+	s_mem_ptr = (struct pid_data) &pid_mutex;
+
+	printf("the pid is: %i", getPid());
+	return EXIT_SUCCESS;
+}
