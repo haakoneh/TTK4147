@@ -1,0 +1,11 @@
+#include "miniproject.h"
+#include <stdlib.h>
+
+
+
+int conn_init(){
+	struct udp_conn conn;
+
+
+}
+

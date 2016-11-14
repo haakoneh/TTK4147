@@ -1,0 +1,11 @@
+#include "miniproject.h"
+
+
+int conn_init();
+
+void send_start();
+void send_get();
+void get_get();
+void send_set();
+void sernd_stop();
+
