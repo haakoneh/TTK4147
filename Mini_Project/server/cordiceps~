@@ -1,0 +1,6 @@
+#!/bin/bash 
+rm pid_time.dat results.dat signal_time.dat plot4.png plot5.png
+./miniproject-server
+sleep 3
+gnuplot plot4
+gnuplot plot5
