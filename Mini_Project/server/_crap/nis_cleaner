@@ -1,0 +1,5 @@
+#!/bin/bash 
+./miniproject-server
+sleep 2
+gnuplot plot4
+gnuplot plot5

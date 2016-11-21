@@ -1,0 +1,3 @@
+#!/bin/bash 
+rm pid_time.dat results.dat signal_time.dat plot4.png plot5.png
+

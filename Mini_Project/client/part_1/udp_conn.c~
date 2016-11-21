@@ -9,8 +9,12 @@
 
 struct udp_conn socket_conn;
 
-void *double_to_char(double u_value,char u_arr[]){
+char *double_to_char(double u_value,char u_arr[]){
+//	#define STRINGLENGTH 8
+	//char u_arr[STRINGLENGTH];
 	sprintf(u_arr, "%f", u_value);
+
+
 }
 
 int socket_init(){
