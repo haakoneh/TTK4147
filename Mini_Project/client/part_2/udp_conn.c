@@ -73,7 +73,7 @@ int send_set(float u_value){
 	return send_with_mutex(msg);	
 }
 
-int receive_get(char buf[]){
+int receive_data(char buf[]){
 	return udp_receive(&socket_conn,buf,BUFFER_SIZE );
 }
 

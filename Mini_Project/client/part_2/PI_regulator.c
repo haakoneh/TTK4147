@@ -6,17 +6,19 @@
 #include <semaphore.h>
 #include <string.h>
 
-#define KP 				10.0
-#define KI 				800.0
-#define REFERENCE 	1.0
-#define MS 				1000
-#define PERIOD_US 	4 * MS
-#define PERIOD_S 		REG_PERIOD/(1000.0 * MS)
-#define SERVER_DATA_OFFSET 8
+#define BASEPERIOD_US 		1
+#define PERIOD_MS			1000 * BASEPERIOD_US
+#define PERIOD_S 			1000 * PERIOD_MS
 
-#define SIG_PERIOD 257
-#define REG_PERIOD 4019
+#define KP 					10.0
+#define KI 					800.0
+#define REFERENCE 			1.0
+#define REG_PERIOD_US 		4019
+#define REG_PERIOD_S 		REG_PERIOD_US/(PERIOD_S) 	
 
+#define SIG_PERIOD_US 		257
+
+#define SERVER_DATA_OFFSET 	8
 
 sem_t regulator_sem;
 sem_t signal_sem;
@@ -30,14 +32,12 @@ void load_regulator_buffer(char *regulator_value){
 }
 
 float parse_get(char buffer[]){
-/* "GET_ACK:123.456" is the only data from the server -
- 	float starts at index 8 */
- 	
 	return atof(buffer + SERVER_DATA_OFFSET); 
 }
+
 float regulator_calculation(float y){
 	float error = REFERENCE - y;
-	integral += error * PERIOD_S;
+	integral += error * REG_PERIOD_S;
 	float u = KP * error + KI * integral;
 
 	return u;
@@ -47,7 +47,7 @@ void *receiver(){
 	char recv_buffer[BUFFER_SIZE];
 
 	while(1){
-		receive_get(recv_buffer);
+		receive_data(recv_buffer);
 		if(recv_buffer[0] == 'G'){
 			load_regulator_buffer(recv_buffer);
 			sem_post(&regulator_sem);
@@ -60,16 +60,19 @@ void *receiver(){
 }
 
 void *return_sig_ack(){
+
 	struct timespec time_start;
 	clock_gettime(CLOCK_REALTIME, &time_start);
+	timespec_add_us(&time_start, SIG_PERIOD);
 	
 	while(1){
 		sem_wait(&signal_sem);
 		send_signal_ack();
-		
-		timespec_add_us(&time_start, SIG_PERIOD);	 
+			 
+		/* FRAGILE: if an iteration takes more that 1 sec, nanosleep will..  throw an error? Return immediately? Untested */
 		clock_nanosleep_the_second(&time_start);
 		clock_gettime(CLOCK_REALTIME,&time_start); 
+		timespec_add_us(&time_start, SIG_PERIOD);
 	}
 }
 
@@ -78,7 +81,8 @@ void *regulator(){
 	float u = 0.0;
 	
 	struct timespec time_start;
-	clock_gettime(CLOCK_REALTIME,&time_start); 
+	clock_gettime(CLOCK_REALTIME,&time_start);
+	timespec_add_us(&time_start, REG_PERIOD); 
 	
 	send_start();
 
@@ -92,16 +96,17 @@ void *regulator(){
 		
 		send_set(u);
 		
-		timespec_add_us(&time_start, REG_PERIOD);	 
+		/* FRAGILE: if an iteration takes more that 1 sec, nanosleep will..  throw an error? Return immediately? Untested */	 
 		clock_nanosleep_the_second(&time_start);
-		clock_gettime(CLOCK_REALTIME,&time_start);    
+		clock_gettime(CLOCK_REALTIME,&time_start);
+		timespec_add_us(&time_start, REG_PERIOD);    
 	}
 }
 
 int main(){
 	pthread_t 	regulator_thread,
-					signal_thread,
-					receiver_thread;
+				signal_thread,
+				receiver_thread;
 
 	memset(regulator_buffer,'\0', sizeof(regulator_buffer));
 	
