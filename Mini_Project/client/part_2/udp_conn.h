@@ -1,10 +1,11 @@
 #include "miniproject.h"
 
-#define BUFFER_SIZE 	64
+#define BUFFER_SIZE 	1492
 
-int conn_init();
+int udp_init()
 int send_start();
 int send_get();
-int send_set(double u_value);
+int send_signal_ack();
 int send_stop();
-int receive_get(char *buf);
+int send_set(double u_value);
+int receive_data(char *buf);
