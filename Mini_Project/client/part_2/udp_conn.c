@@ -59,11 +59,11 @@ int send_stop()
 
 int send_set(double u_value)
 {
-	char number[DOUBLE_TO_CHAR_LENGTH]; 
-	sprintf(number, "%f", u_value);
-
 	char msg[DOUBLE_TO_CHAR_LENGTH + 5];
 	sprintf(msg,"%s","SET:\0");
+
+	char number[DOUBLE_TO_CHAR_LENGTH]; 
+	sprintf(number, "%f", u_value);
 
 	strcat(msg,number);
 	

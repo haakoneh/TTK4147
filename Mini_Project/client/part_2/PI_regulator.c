@@ -10,16 +10,14 @@
 #define PERIOD_MS			1000 * BASEPERIOD_US
 #define PERIOD_S 			1000 * PERIOD_MS
 
-#define SIG_PERIOD_US 		257
+#define SIG_PERIOD_US 		517
 
-#define REG_PERIOD_US 		4019
+#define REG_PERIOD_US 		3511
 
 #define KP 					10.0
 #define KI 					800.0
 #define REFERENCE 			1.0
 #define REG_PERIOD_S 		REG_PERIOD_US/(PERIOD_S) 	
-
-
 
 #define SERVER_DATA_OFFSET 	8
 
@@ -30,10 +28,10 @@ pthread_mutex_t regulator_buffer_mutex;
 volatile double integral = 0.0;
 volatile double regulator_buffer = 0;
 
-void load_regulator_buffer(char *new_value, double *regulator_buffer)
+void load_regulator_buffer(char *new_value)
 {
 	pthread_mutex_lock(&regulator_buffer_mutex);
-	*regulator_buffer = atof(new_value + SERVER_DATA_OFFSET);
+	regulator_buffer = atof(new_value + SERVER_DATA_OFFSET);
 	pthread_mutex_unlock(&regulator_buffer_mutex);
 }
 
@@ -74,17 +72,19 @@ void *return_sig_ack()
 {
 	struct timespec time_start;
 	clock_gettime(CLOCK_REALTIME, &time_start);
-	timespec_add_us(&time_start, SIG_PERIOD);
+	timespec_add_us(&time_start, SIG_PERIOD_US);
 	
 	while(1)
 	{
 		sem_wait(&signal_sem);
 		send_signal_ack();
 			 
-		/* FRAGILE: if an iteration takes more that 1 sec, nanosleep will..  throw an error? Return immediately? Untested */
+		/* 	FRAGILE: if an iteration takes more that 1 sec, nanosleep will..
+		  	throw an error? Return immediately? Untested */
+
 		clock_nanosleep_the_second(&time_start);
 		clock_gettime(CLOCK_REALTIME,&time_start); 
-		timespec_add_us(&time_start, SIG_PERIOD);
+		timespec_add_us(&time_start, SIG_PERIOD_US);
 	}
 }
 
@@ -95,7 +95,7 @@ void *regulator()
 	
 	struct timespec time_start;
 	clock_gettime(CLOCK_REALTIME,&time_start);
-	timespec_add_us(&time_start, REG_PERIOD); 
+	timespec_add_us(&time_start, REG_PERIOD_US); 
 	
 	send_start();
 
@@ -113,10 +113,12 @@ void *regulator()
 		
 		send_set(u);
 		
-		/* FRAGILE: if an iteration takes more that 1 sec, nanosleep will..  throw an error? Return immediately? Untested */	 
+		/* 	FRAGILE: if an iteration takes more that 1 sec, nanosleep will..
+			throw an error? Return immediately? Untested */	 
+		
 		clock_nanosleep_the_second(&time_start);
 		clock_gettime(CLOCK_REALTIME,&time_start);
-		timespec_add_us(&time_start, REG_PERIOD);    
+		timespec_add_us(&time_start, REG_PERIOD_US);    
 	}
 }
 
@@ -139,7 +141,7 @@ int main()
 	
 	struct timespec time_stop;
 	clock_gettime(CLOCK_REALTIME,&time_stop);
-	timespec_add_us(&time_stop, 500*MS);
+	timespec_add_us(&time_stop, 500*PERIOD_MS);
 	clock_nanosleep_the_second(&time_stop);
 
 	send_stop();

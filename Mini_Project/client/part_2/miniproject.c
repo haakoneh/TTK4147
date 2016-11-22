@@ -69,7 +69,7 @@ int clock_nanosleep_the_second(struct timespec *next)
 	}
 
 	// sleep
-	(&sleep, NULL);
+	nanosleep(&sleep, NULL);
 
 	return 0;
 }

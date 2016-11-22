@@ -1,0 +1,15 @@
+PING 192.168.0.1 (192.168.0.1): 56 data bytes
+64 bytes from 192.168.0.1: seq=0 ttl=64 time=1.228 ms
+64 bytes from 192.168.0.1: seq=1 ttl=64 time=1.726 ms
+64 bytes from 192.168.0.1: seq=2 ttl=64 time=1.605 ms
+64 bytes from 192.168.0.1: seq=3 ttl=64 time=1.459 ms
+64 bytes from 192.168.0.1: seq=4 ttl=64 time=1.644 ms
+64 bytes from 192.168.0.1: seq=5 ttl=64 time=1.670 ms
+64 bytes from 192.168.0.1: seq=6 ttl=64 time=1.905 ms
+64 bytes from 192.168.0.1: seq=7 ttl=64 time=1.691 ms
+64 bytes from 192.168.0.1: seq=8 ttl=64 time=1.841 ms
+64 bytes from 192.168.0.1: seq=9 ttl=64 time=1.279 ms
+
+--- 192.168.0.1 ping statistics ---
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 1.228/1.604/1.905 ms

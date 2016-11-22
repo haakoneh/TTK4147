@@ -1,4 +1,4 @@
-TOOL_CHAIN= ~/Desktop/TTK4147_21/TTK4147_exercises/Mini_Project/buildroot-avr32-v3.0.0_TTK4147/output/staging/usr/bin
+TOOL_CHAIN= ~/Desktop/Assignment10/buildroot-avr32-v3.0.0_TTK4147/output/staging/usr/bin
 CROSS=avr32-linux-
 
 simple_test : PI_regulator.c
