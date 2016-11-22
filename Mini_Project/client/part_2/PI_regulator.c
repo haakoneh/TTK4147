@@ -1,18 +1,19 @@
-#include "miniproject.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
-#include "udp_conn.h"
 #include <semaphore.h>
 #include <string.h>
+
+#include "miniproject.h"
+#include "udp_conn.h"
 
 #define BASEPERIOD_US 		1
 #define PERIOD_MS			1000 * BASEPERIOD_US
 #define PERIOD_S 			1000 * PERIOD_MS
 
-#define SIG_PERIOD_US 		1000
+#define SIG_PERIOD_US 		250
 
-#define REG_PERIOD_US 		4000
+#define REG_PERIOD_US 		4250
 
 #define KP 					10.0
 #define KI 					800.0

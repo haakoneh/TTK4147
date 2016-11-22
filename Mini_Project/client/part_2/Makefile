@@ -2,9 +2,9 @@ TOOL_CHAIN= ~/Desktop/Assignment10/buildroot-avr32-v3.0.0_TTK4147/output/staging
 CROSS=avr32-linux-
 
 simple_test : PI_regulator.c
-	$(TOOL_CHAIN)/$(CROSS)gcc PI_regulator.c miniproject.c udp_conn.c -o simple_test -lrt -pthread	
-	cp simple_test /export/nfs/home/SW
+	$(TOOL_CHAIN)/$(CROSS)gcc PI_regulator.c miniproject.c udp_conn.c -o client_part2 -lrt -pthread	
+	cp client_part2 /export/nfs/home/SW
 	
 simple_test_gcc : PI_regulator.c
-	gcc PI_regulator.c miniproject.c udp_conn.c -o simple_test_gcc -lrt -pthread	
+	gcc PI_regulator.c miniproject.c udp_conn.c -o client_part2_gcc -lrt -pthread	
 

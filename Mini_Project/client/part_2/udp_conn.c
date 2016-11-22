@@ -1,9 +1,10 @@
-#include "miniproject.h"
-#include "udp_conn.h"
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
 #include <pthread.h>
+
+#include "miniproject.h"
+#include "udp_conn.h"
 
 #define IP_ADDRESS 						"192.168.0.1"
 #define DOUBLE_TO_CHAR_LENGTH 	23  
